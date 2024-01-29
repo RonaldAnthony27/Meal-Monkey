@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.png";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useSelector } from "react-redux";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -14,7 +14,7 @@ const Header = () => {
   console.log(cartItems)
   return (
     <div className="header shadow-md text-orange-300  h-20 flex justify-between p-4 m-4 items-center border-b border-gray-500">
-    {/* <Link to="/">  <img className="logo  object-cover w-16 cursor-pointer" src={logo} /></Link> */}
+    <Link to="/">  <img className="logo  object-cover w-16 cursor-pointer" src={logo} /></Link>
       <div className="nav-items flex  p-3 ">
         <div className="m-3 hover:text-orange-500">
           <Link to="/">Home </Link>
