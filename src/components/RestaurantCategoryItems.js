@@ -5,14 +5,14 @@ import { addItem, removeItem } from "../utils/cartSlice"
 const RestaurantCategoryItems = (items ) => {
     const data = items.items
     const dispatch = useDispatch();
-     const [counter, setcounter] = useState(0)
+     
     const addItemhandler = (item) => {
         dispatch(addItem(item));
-         setcounter(counter+1)
+         
     }
     const minushandler = (item) => {
         dispatch(removeItem(item))
-        setcounter(counter - 1);
+    
     }
 
     return (
@@ -36,7 +36,7 @@ const RestaurantCategoryItems = (items ) => {
                        < img className=" rounded-lg"  src={IMG_MENU_URL + item.card.info.imageId} />
                             <button className="border-2  border-gray p-1  ">
                                 <span onClick={()=>minushandler(item)}>-</span>
-                                <span className="mx-3">{ counter}</span>
+                                <span className="mx-3">Add</span>
                                 <span onClick={()=>addItemhandler(item)}>+</span>
 
                             </button>
