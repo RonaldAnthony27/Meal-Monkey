@@ -64,7 +64,7 @@ const Body = () => {
     <div className="Body ">
       <div className="filter flex items-center justify-center h-10 m-4 px-5  gap-10  ">
         <button
-          className=" bg-orange-300 rounded-lg hover:bg-orange-400 p-3"
+          className=" bg-orange-300 rounded-lg hover:bg-orange-400 p-3 hidden"
             onClick={() => {
             console.log(listofRest[0]?.info?.avgRating)
             const filteredList = listofRest.filter(
@@ -82,7 +82,7 @@ const Body = () => {
           <input
             type="text"
             data-testid="searchInput"
-            className="search-input border border-solid"
+            className="search-input border border-solid border-orange-300 p-3"
             placeholder="Search a restaurant you want..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
