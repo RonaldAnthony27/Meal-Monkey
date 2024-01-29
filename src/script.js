@@ -53,8 +53,8 @@ const AppLayout = () =>
 {return (
   <div className="app-layout">
     <Auth0Provider
-    domain="dev-i0w03ta1ilxqu4o4.us.auth0.com"
-    clientId="l9LzDVH8QZagjFulGmijM9hQm9Qplw61"
+    domain={process.env.REACT_APP_AUTH0_DOMAIN}
+    clientId={process.env.REACT_APP_AUTH0_CLIENT_ID}
     authorizationParams={{
       redirect_uri: window.location.origin
     }}
