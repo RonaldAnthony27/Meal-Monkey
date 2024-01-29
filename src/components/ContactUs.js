@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import contact from "../../assets/Contact-Us.png";
+ import contact from "../../assets/Contact-Us.png";
 
 const Contact = () => {
   const [message, setMessage] = useState(false);
@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="contact-container m-5 p-5 flex items-center justify-center">
       <div className="contact-left">
-      {/* <img className="h-[400] rounded-lg" src={contact} alt="Contact us" /> */}
+      <img className="h-[400] rounded-lg" src={contact} alt="Contact us" />
       </div>
       <div className="contact-right mx-5">
       <h1 className=" heading font-bold ">Contact Us</h1>
