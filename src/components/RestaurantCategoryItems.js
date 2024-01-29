@@ -29,7 +29,7 @@ const RestaurantCategoryItems = (items ) => {
                             <span>₹{item.card.info.price ? item.card.info.price / 100 :
                             item.card.info.defaultPrice/100} </span>
                         
-                        <p className="text-sm">{item.card.info.description}</p></div>
+                        <p className="text-sm hidden md:block">{item.card.info.description}</p></div>
                         <div className="h-auto w-3/12 m-1 p-1 object-cover overflow-hidden ">
                         
                             
